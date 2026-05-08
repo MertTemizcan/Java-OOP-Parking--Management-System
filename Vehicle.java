@@ -14,9 +14,9 @@ public class Vehicle {
 		this.plate = plate;
 		this.brand = brand;
 		this.model = model;
-		this.isMotorRunning = false;
+		this.isMotorRunning = true;
 		this.status = "Duruyor";
-		this.kilometer = 0;
+		this.kilometer = 10000;
 		this.location = "Giriş Kapısı";
 	}
 
@@ -55,7 +55,7 @@ public class Vehicle {
 		} else {
 			this.kilometer += moveKm;
 			this.status = "Hareket Ediyor";
-			System.out.println(plate + " plakalı araç " + moveKm + " km yol yaptı. Yeni KM: " + kilometer);
+			System.out.println(plate + " plakalı araç " + moveKm + " km yol yaptı yeni KM: " + kilometer);
 		}
 	}
 
@@ -63,7 +63,7 @@ public class Vehicle {
 		System.out.println("--- Araç Bilgileri ---");
 		System.out.println("Plaka: " + plate);
 		System.out.println("Marka ve Model: " + brand + " " + model);
-		System.out.println("Güncel Kilometre: " + kilometer);
-		System.out.println("Motor Durumu: " + (isMotorRunning ? "Açık" : "Kapalı"));
+		System.out.println("Güncel kilometre: " + kilometer);
+		System.out.println("Motor durumu: " + (isMotorRunning ? "Açık" : "Kapalı"));
 	}
 }

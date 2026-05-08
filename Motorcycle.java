@@ -19,6 +19,6 @@ public class Motorcycle extends Vehicle {
 	@Override
 	public void showInfos() {
 		super.showInfos();
-		System.out.println("Sepet Var mı?: " + (hasSidecar ? "Evet" : "Hayır"));
+		System.out.println("Sepeti var mı?: " + (hasSidecar ? "Evet" : "Hayır"));
 	}
 }

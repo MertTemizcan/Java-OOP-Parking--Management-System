@@ -13,12 +13,16 @@ public class Car extends Vehicle {
 	}
 
 	public void setDoors(int doors) {
-		this.doors = doors;
+		if(doors == 2 || doors == 4) {
+			this.doors = doors;
+		} else {
+			System.out.println("Kapı sayısı sadece 2 veya 4 olabilir");
+		}
 	}
 
 	@Override
 	public void showInfos() {
 		super.showInfos();
-		System.out.println("Kapı Sayısı: " + doors);
+		System.out.println("Kapı sayısı: " + doors);
 	}
 }
